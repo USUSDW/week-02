@@ -11,7 +11,7 @@ plugins {
     id 'idea'
 }
 
-group 'com.github.hhenrichsen'
+group 'com.github.ususdw'
 version '1.0.0'
 
 sourceCompatibility = 1.10
