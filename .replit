@@ -1,0 +1,2 @@
+language = "java10"
+run = "chmod +x gradlew && ./gradlew shadowJar && cp -r config/* project/build/libs/ && jar -jar project/build/libs/project-all.jar"
