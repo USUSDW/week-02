@@ -4,21 +4,21 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class WebServerMeta {
-    private List<String> sites;
+    private List<WebServerSite> sites;
 
     public WebServerMeta() {
         this.sites = new LinkedList<>();
     }
 
-    public WebServerMeta(List<String> sites) {
+    public WebServerMeta(List<WebServerSite> sites) {
         this.sites = sites;
     }
 
-    public List<String> getSites() {
+    public List<WebServerSite> getSites() {
         return sites;
     }
 
-    public void setSites(List<String> sites) {
+    public void setSites(List<WebServerSite> sites) {
         this.sites = sites;
     }
 }

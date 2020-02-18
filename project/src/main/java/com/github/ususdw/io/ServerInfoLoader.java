@@ -13,8 +13,13 @@ import java.util.List;
 public class ServerInfoLoader {
     private final Yaml yaml = new Yaml(new Constructor(ServerList.class));
 
-    public List<ServerInfo> loadServers() throws FileNotFoundException {
-        ServerList servers = yaml.load(new FileReader(new File("config/settings.yml")));
-        return servers.getServers();
+    public List<ServerInfo> loadServers() {
+        try {
+            return ((ServerList) yaml.load(new FileReader(new File("config/settings.yml")))).getServers();
+        } catch (FileNotFoundException e) {
+            System.exit(1);
+            e.printStackTrace();
+            return null;
+        }
     }
 }

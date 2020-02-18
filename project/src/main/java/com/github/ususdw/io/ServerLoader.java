@@ -5,6 +5,8 @@ import com.google.gson.Gson;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ServerLoader {
     private static final Gson gson = new Gson();
@@ -25,5 +27,20 @@ public class ServerLoader {
             System.err.println("Cannot find config file " + info.getConfig().getPath());
             return null;
         }
+    }
+
+    public List<GeneralServer> loadServers(List<ServerInfo> servers) {
+        var serverList = new ArrayList<GeneralServer>();
+        for (var serverInfo : servers) {
+            var server = this.load(serverInfo);
+            if(server != null) {
+                server.setPort(serverInfo.getPort());
+                serverList.add(server);
+                if(server instanceof WebServer) {
+                    System.out.println(((WebServer) server).getMeta().getSites());
+                }
+            }
+        }
+        return serverList;
     }
 }
