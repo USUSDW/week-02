@@ -1,4 +1,4 @@
-package com.github.ususdw.example2;
+package com.github.ususdw.example3;
 
 public class GeometryCalculableCircle extends Circle implements GeometryCalculable {
 
