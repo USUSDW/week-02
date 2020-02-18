@@ -1,0 +1,9 @@
+{
+  "clientLimit": 10,
+  "comment": "This is a postgres database.",
+  "hostname": "db.nowhere.com",
+  "meta": {
+    "username": "nowhere",
+    "password": "n0wh3r3#2020"
+  }
+}

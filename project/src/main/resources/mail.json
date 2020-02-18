@@ -1,0 +1,8 @@
+{
+  "clientLimit": 5,
+  "comment": "This is a mail server.",
+  "hostname": "mail.nowhere.com",
+  "meta": {
+    "addressRegex": "[\\w.]{1,50}"
+  }
+}

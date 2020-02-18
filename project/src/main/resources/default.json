@@ -1,0 +1,5 @@
+{
+  "clientLimit": 7,
+  "comment": "This is the default config.",
+  "hostname": "nowhere.com"
+}
