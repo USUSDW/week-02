@@ -36,9 +36,6 @@ public class ServerLoader {
             if(server != null) {
                 server.setPort(serverInfo.getPort());
                 serverList.add(server);
-                if(server instanceof WebServer) {
-                    System.out.println(((WebServer) server).getMeta().getSites());
-                }
             }
         }
         return serverList;
