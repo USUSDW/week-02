@@ -1,0 +1,13 @@
+servers:
+  - type: 'mail'
+    config: 'config/mail.json'
+    port: 465
+    runScript: '/home/mail/run'
+  - type: 'web'
+    config: 'config/web.json'
+    port: 80
+    runScript: '/home/web/run'
+  - type: 'database'
+    config: 'config/db.json'
+    port: 8123
+    runScript: '/home/db/run'

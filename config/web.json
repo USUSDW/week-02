@@ -1,0 +1,10 @@
+{
+  "clientLimit": 200,
+  "comment": "This is a web server.",
+  "hostname": "nowhere.com",
+  "meta": {
+    "sites": [
+      "/var/www/main/html"
+    ]
+  }
+}
