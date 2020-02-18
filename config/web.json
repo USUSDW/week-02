@@ -4,7 +4,14 @@
   "hostname": "nowhere.com",
   "meta": {
     "sites": [
-      "/var/www/main/html"
+      {
+        "root": "/var/www/html/main",
+        "hostname": "@"
+      },
+      {
+        "root": "/var/www/html/staging",
+        "hostname": "staging"
+      }
     ]
   }
 }
