@@ -1,15 +1,13 @@
 servers:
-  default: &default
-    config: 'default.json'
-    port: 80
-  mail: *default
+  mail:
     config: 'mail.json'
     port: 465
     run-script: '/home/mail/run'
-  web: *default
+  web:
     config: 'web.json'
+    port: 80
     run-script: '/home/web/run'
-  database: *default
+  database:
     config: 'db.json'
     port: 8123
     run-script: '/home/db/run'
