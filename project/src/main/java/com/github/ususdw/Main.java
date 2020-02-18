@@ -21,7 +21,6 @@ public class Main {
             e.printStackTrace();
             System.exit(1);
         }
-        assert servers != null;
         for (var serverInfo : servers) {
             var server = serverLoader.load(serverInfo);
             if(server != null) {
