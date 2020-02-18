@@ -4,6 +4,7 @@ public class GeneralServer {
     private int clientLimit;
     private String comment;
     private String hostname;
+    private int port;
 
     public GeneralServer() {}
 
@@ -38,6 +39,14 @@ public class GeneralServer {
     }
 
     public void start() {
-        System.out.println("This is a dummy method that is starting a server on " + hostname + ". Its comment is '" + comment + "'");
+        System.out.println("This is a dummy method that is starting a server on " + hostname + ":" + port + ". Its comment is '" + comment + "'");
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public int getPort() {
+        return port;
     }
 }

@@ -24,6 +24,7 @@ public class Main {
         for (var serverInfo : servers) {
             var server = serverLoader.load(serverInfo);
             if(server != null) {
+                server.setPort(serverInfo.getPort());
                 serverList.add(server);
             }
         }
