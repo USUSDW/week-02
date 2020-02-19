@@ -35,6 +35,10 @@ public class DatabaseServer extends GeneralServer {
     }
 
     public void startDatabaseService() {
+        if(!this.connected) {
+            System.err.println("[CRIT] Failed to start service: database not connected.");
+            throw new RuntimeException("Failed to start service: database not connected.");
+        }
         if(!this.connectionTested) {
             System.err.println("[WARN] Starting untested database service.");
         }
